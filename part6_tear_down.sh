@@ -6,8 +6,8 @@
 # purpose: Tear down GKE cluster and associated resources
 
 # Constants - CHANGE ME!
-readonly PROJECT='go-srv-demo'
-readonly CLUSTER='go-srv-demo-cluster'
+readonly PROJECT='go-srv-demo-1'
+readonly CLUSTER='go-srv-demo-1-cluster'
 readonly REGION='us-central1'
 
 # Delete GKE cluster (time in foreground)

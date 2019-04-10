@@ -4,7 +4,7 @@ metadata:
   name: mongodb-atlas-external-mesh
 spec:
   hosts:
-  - {{ your_host_url_goes_here }}
+  - cluster0-gbroq.gcp.mongodb.net
   ports:
   - name: mongo
     number: 27017

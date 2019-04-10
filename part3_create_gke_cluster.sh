@@ -6,11 +6,11 @@
 # purpose: Create 3-node GKE cluster
 
 # Constants - CHANGE ME!
-readonly PROJECT='go-srv-demo'
-readonly CLUSTER='go-srv-demo-cluster'
+readonly PROJECT='go-srv-demo-1'
+readonly CLUSTER='go-srv-demo-1-cluster'
 readonly REGION='us-central1'
 readonly MASTER_AUTH_NETS='72.231.208.0/24'
-readonly GKE_VERSION='1.12.6-gke.10'
+readonly GKE_VERSION='1.12.5-gke.5'
 readonly MACHINE_TYPE='n1-standard-2'
 
 # yes | gcloud components update
@@ -31,8 +31,6 @@ gcloud beta container \
   --num-nodes 1 \
   --enable-stackdriver-kubernetes \
   --enable-ip-alias \
-  --enable-master-authorized-networks \
-  --master-authorized-networks ${MASTER_AUTH_NETS} \
   --network projects/${PROJECT}/global/networks/default \
   --subnetwork projects/${PROJECT}/regions/${REGION}/subnetworks/default \
   --default-max-pods-per-node 110 \

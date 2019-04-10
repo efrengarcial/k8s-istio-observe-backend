@@ -4,7 +4,7 @@ metadata:
   name: cloudamqp-external-mesh
 spec:
   hosts:
-  - {{ your_host_url_goes_here }}
+  - albatross.rmq.cloudamqp.com
   ports:
   - name: rabbitmq
     number: 5672
